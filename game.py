@@ -1,8 +1,5 @@
-from pygame import mixer
-import time
 import termcolor
 import random
-import playsound
 import art
 #------------------------------------------
 # functions 
@@ -76,7 +73,6 @@ else:
             input("....")
             input("....")
             input("....")
-            input("....")
             print("You and Daniel have now arrived at"+termcolor.colored(" Earl's Court", attrs = ["bold"])+" station.\nDo you want to stay on the subway or go to the surface?\n")
             answer = getgroundinput(correct)
             #3rdsubway
@@ -118,7 +114,7 @@ else:
                     print("\n🥳🥳🥳\nThere it is! the Science Museum!\nYou and Daniel have been reunited with your friends!\nYour teachers, who have been frantically searching for you, are extremely relieved.\nCongratulations on being such a smart player!\n")
                     #ending no.1
             elif answer == '2':
-                print("\nYou and Daniel are now at"+termcolor.colored(" Earl's Court", attrs = ["bold"])+ "road.\n")
+                print("\nYou and Daniel are now at"+termcolor.colored(" Earl's Court", attrs = ["bold"])+ " road.\n")
                 direction18answer = False
                 while not direction18answer:
                     direction18 = directionChoice(False)
